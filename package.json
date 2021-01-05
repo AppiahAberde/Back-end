@@ -1,25 +1,37 @@
 {
-  "name": "back-end",
+  "name": "my-github",
   "version": "1.0.0",
-  "description": "Backend for trust wallet",
+  "description": "This is the github version of the truststore in development",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node ./server.js",
+    "dev": "nodemon ./server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AppiahAberde/Back-end.git"
+    "url": "git+https://github.com/AppiahAberde/TrustStore.git"
   },
   "author": "Jonathan Appiah-Aberde",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AppiahAberde/Back-end/issues"
+    "url": "https://github.com/AppiahAberde/TrustStore/issues"
   },
-  "homepage": "https://github.com/AppiahAberde/Back-end#readme",
+  "homepage": "https://github.com/AppiahAberde/TrustStore#readme",
   "dependencies": {
+    "axios": "^0.21.0",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "joi": "^17.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.4.11",
+    "nodemon": "^2.0.6",
+    "rootpath": "^0.1.2",
+    "sequelize": "^6.3.5"
   }
 }
